@@ -58,13 +58,16 @@ var setAllAssets = ()=>{
         this.current.assets = this.current.assets.concat(body.assets);
     };
     if(this.current.assets.length>0){
+
           getAssets();
     }
     else{
-
-      this.emit('preload')
-      this.emit('load')
-      this.emit('postload')
+ 
+      setTimeout(()=>{
+        this.emit('preload')
+        this.emit('load')
+        this.emit('postload')
+      },0)
 
     }
 

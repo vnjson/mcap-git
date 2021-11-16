@@ -7,7 +7,7 @@ import plugins from './plugins.js'
 fetch(`scenes/vn.json`)
   .then(r=>r.json())
   .then(tree=>init(tree))
-  .catch(err=>console.error('Ivalid script', err.message))
+  .catch(err=>console.error('Invalid script', err.message))
 
 function init (tree){
   var debug = false
@@ -27,9 +27,10 @@ function init (tree){
   $vnjs.setTree(tree)
 
   $vnjs.on('postload', ()=>{
-        console.log(123)
-        $vnjs.exec({'jump': '$root.$init'})
+
+        $vnjs.exec({jump: '$root.$init', screen: 'stream'})
   })
+
   $vnjs.on('init', ()=>{
     $vnjs.exec()
   })

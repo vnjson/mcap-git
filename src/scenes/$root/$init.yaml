@@ -1,5 +1,4 @@
-- screen: stream
-  dialog-box: true
+- dialog-box: true
   next: true
 
 - У лукоморья дуб зелёный;

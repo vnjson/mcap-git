@@ -4,7 +4,6 @@ import assetsLoader       from './plugins/assets-loader/index.js'
 import screen             from './plugins/screen/index.js'
 /*screens*/
 import loaderScreen       from './plugins/screen-loader/index.js'
-import mainMenuScreen     from './plugins/screen-main-menu/index.js'
 import streamScreen       from './plugins/screen-stream/index.js'
 import zimScreen          from './plugins/screen-zim/index.js'
 /**/
@@ -41,7 +40,6 @@ export default function(){
   this.use(assetsLoader)
   /*screens*/
   this.use(screen)
-  this.use(mainMenuScreen)
   this.use(streamScreen)
   this.use(loaderScreen)
   this.use(zimScreen)
