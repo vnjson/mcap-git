@@ -57,7 +57,17 @@ var setAllAssets = ()=>{
     for(let [scene, body] of Object.entries(this.TREE)){
         this.current.assets = this.current.assets.concat(body.assets);
     };
-    getAssets();
+    if(this.current.assets.length>0){
+          getAssets();
+    }
+    else{
+
+      this.emit('preload')
+      this.emit('load')
+      this.emit('postload')
+
+    }
+
 }
 
 /*
@@ -72,12 +82,10 @@ this.on('preload', scene=>{
 */
 
 this.on('setTree', _=>{
-
   setAllAssets();
 
+
 });
-
-
 
 
 }

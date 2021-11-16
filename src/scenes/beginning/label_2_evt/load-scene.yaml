@@ -1,8 +1,0 @@
-
-
-- $: Сейчас будет подгужена сцена по запросу из вне
-  cloud: false
-  dialog-box: true
-
-
-- load-scene: ./_data/data-scene.json

@@ -10,23 +10,28 @@ fetch(`scenes/vn.json`)
   .catch(err=>console.error('Ivalid script', err.message))
 
 function init (tree){
-  var debug = tree.$root.package.debug
+  var debug = false
+  if(tree.$root.hasOwnProperty('package')){
+    debug = tree.$root.package.debug||false
+  }
   /*
     conf: {
       debug: true,
       $: {id: '$', name: 'Автор', replyColor: 'red'} //default character
     }
    */
-  var vnjs = new Vnjson({ debug })
-  window.$vnjs = vnjs
-  plugins.call(vnjs)
+  window.$vnjs = new Vnjson({ debug: debug })
 
-  vnjs.setTree(tree)
-  vnjs.on('postload', ()=>{
-        vnjs.exec({'jump': '$root.$init'})
+  plugins.call($vnjs)
+
+  $vnjs.setTree(tree)
+
+  $vnjs.on('postload', ()=>{
+        console.log(123)
+        $vnjs.exec({'jump': '$root.$init'})
   })
-  vnjs.on('init', ()=>{
-    vnjs.exec()
+  $vnjs.on('init', ()=>{
+    $vnjs.exec()
   })
 }
 

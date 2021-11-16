@@ -378,7 +378,14 @@
       for (let [scene, body] of Object.entries(this.TREE)) {
         this.current.assets = this.current.assets.concat(body.assets);
       }
-      getAssets();
+
+      if (this.current.assets.length > 0) {
+        getAssets();
+      } else {
+        this.emit('preload');
+        this.emit('load');
+        this.emit('postload');
+      }
     };
     /*
     this.on('preload', scene=>{
@@ -1698,7 +1705,11 @@
   fetch(`scenes/vn.json`).then(r => r.json()).then(tree => init(tree)).catch(err => console.error('Ivalid script', err.message));
 
   function init(tree) {
-    var debug = tree.$root.package.debug;
+    var debug = false;
+
+    if (tree.$root.hasOwnProperty('package')) {
+      debug = tree.$root.package.debug || false;
+    }
     /*
       conf: {
         debug: true,
@@ -1706,19 +1717,20 @@
       }
      */
 
-    var vnjs = new Vnjson({
-      debug
+
+    window.$vnjs = new Vnjson({
+      debug: debug
     });
-    window.$vnjs = vnjs;
-    plugins.call(vnjs);
-    vnjs.setTree(tree);
-    vnjs.on('postload', () => {
-      vnjs.exec({
+    plugins.call($vnjs);
+    $vnjs.setTree(tree);
+    $vnjs.on('postload', () => {
+      console.log(123);
+      $vnjs.exec({
         'jump': '$root.$init'
       });
     });
-    vnjs.on('init', () => {
-      vnjs.exec();
+    $vnjs.on('init', () => {
+      $vnjs.exec();
     });
   }
 

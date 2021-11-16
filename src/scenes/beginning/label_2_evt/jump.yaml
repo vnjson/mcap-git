@@ -1,6 +1,0 @@
-
-- c: Информация о плагине [ jump ]
-  cloud: null
-- c: Плагин [ jump ] включён в стандарную библиотеку, библиотеки vnjson
-- c: scene.label | label | i
-- jump: $init
