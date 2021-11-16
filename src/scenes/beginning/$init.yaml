@@ -1,0 +1,26 @@
+- clear: all
+  next: true
+- dialog-box: true
+  next: true
+- screen: stream
+  scene: class-room
+  audio:
+    name: main-theme
+    action: play
+    speed: 0.3
+    volume: 0.01
+    loop: true
+  hands: true
+  $: test
+
+- dialog-box: false
+  hands: false
+  next: true
+
+- menu:
+    zim-label: Как подключить zim
+    label_1_tree__fs: Файловая структура
+    yaml-scripts: YAML скрипты
+    plug: Список плагинов
+    disabled: ---
+    $root.$init: Вернуться в начало

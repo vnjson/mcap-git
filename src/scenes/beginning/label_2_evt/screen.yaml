@@ -1,0 +1,5 @@
+
+- c: Информация о плагине [ screen ]
+  cloud: null
+  termImg: screens
+- jump: $init

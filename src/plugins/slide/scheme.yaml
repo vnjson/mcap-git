@@ -1,0 +1,8 @@
+- slide: dir_screens
+- slide: false
+
+- slide:
+    name: components
+    css:
+      top: 320px
+      border: 15px dashed orange

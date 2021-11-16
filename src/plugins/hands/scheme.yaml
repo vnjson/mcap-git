@@ -1,0 +1,8 @@
+
+
+- hands: true 
+
+- right-hand: item1-img
+- left-hand: imte2-img
+
+- hands: false

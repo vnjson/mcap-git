@@ -1,0 +1,35 @@
+- clear: all
+  next: true
+  
+- screen: stream
+  scene: lab
+  audio:
+    name: rozario_agro
+    action: play
+    speed: 0.3
+    volume: 0.3
+    loop: true
+  next: true  # next string
+
+- dialog-box: false
+  menu:
+    how-write-plugin: Как написать плагин
+    next: API
+    disabled: ---        
+    $root.$init: Вернуться в начало
+- n: vnjson.js 
+  dialog-box: true
+  right: Nora
+
+- n: test 2
+  term:
+    lang: js
+    data: api.js
+    css:
+      color: wheat
+
+
+- n: test 33333
+  right: false
+
+- jump: $root.$init

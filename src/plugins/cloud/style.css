@@ -1,0 +1,25 @@
+.screen__cloud {
+  width: 500px;
+  background: wheat;
+  padding: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+  transform: translate(-50%, 0);
+  top: 10%; }
+  .screen__cloud .tag {
+    padding: 10px 15px;
+    font-size: 18px;
+    margin: 10px;
+    display: inline-flex;
+    background: #444;
+    cursor: pointer;
+    color: #34d1a2;
+    transition: 0.3s;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); }
+    .screen__cloud .tag:hover {
+      background: #000;
+      color: darkcyan; }

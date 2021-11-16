@@ -1,0 +1,18 @@
+
+
+- content:
+    - $root.$init: Том 1
+      disabled: Глава 1
+      beginning.plug: Глава 2
+      beginning.zim-label: Глава 3
+
+    - experienced.$init: Том 2
+      disabled: Глава 1
+      experienced.how-write-plugin: Глава 2
+
+    - disabled: Том 3
+      experienced.test: Глава 1
+      experienced.$init: Глава 2
+    - disabled: Том 4
+      experienced.test: Глава 1
+      experienced.$init: Глава 2 

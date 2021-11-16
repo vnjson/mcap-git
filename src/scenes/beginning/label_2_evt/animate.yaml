@@ -1,0 +1,29 @@
+
+- c: Информация о плагине [ animate ]
+  cloud: null
+  dialog-box: clear
+
+- a: Это снова я
+  center: Alice
+
+- a: Давайте посмотрим как работает плагин [ animate ]
+- animate:
+    selector: .stream__show-center # Элемент для анимации. [ F12 ] - inspector
+    duration: 300 # Время выполнения в секундах
+    css:  # css свойства
+      left: +=300
+- a: ...
+  animate:
+    selector: .stream__show-center
+    duration: 600 # Время выполнения в секундах
+    css:
+      left: -=600
+      opacity: 0.5
+- a: ...
+  animate:
+    selector: .stream__show-center
+    duration: 600 # Время выполнения в секундах
+    css:
+      opacity: 1
+      left: 50%
+- jump: $init

@@ -1,0 +1,18 @@
+
+
+- clear-data: true # обнуляет данные
+
+# ложим данные в хранилище $vnjs.current.data
+- set-data:
+    age: меньше 12
+    gender: M
+
+
+# получаем данные данные в хранилище $vnjs.current.data
+- switch:
+    age===меньше12:
+      jump: $root.$init
+    age===больше12:
+      $: Возраст больше 12 лет
+    age===17:
+      target: _17лет

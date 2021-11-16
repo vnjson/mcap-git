@@ -1,0 +1,30 @@
+.dialog-box {
+  z-index: 7000;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  line-height: 32px;
+  height: 200px;
+  background: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  display: block;
+  padding-top: 10px;
+  padding-left: 10px;
+  word-spacing: 10px;
+  display: none;
+  top: unset; }
+
+.dialog-box__name {
+  color: wheat;
+  font-size: 22px;
+  width: 100%;
+  font-weight: bold;
+  padding: 10px; }
+
+.dialog-box__reply {
+  color: wheat;
+  font-size: 22px;
+  padding: 10px;
+  width: 90%; 
+}
+

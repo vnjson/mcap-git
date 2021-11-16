@@ -1,0 +1,228 @@
+
+#vnjson__tree{
+  position: absolute;
+  top: 0;
+  right: -301px;
+  background: wheat;
+  width: 301px;
+  height: 100%;
+
+}
+
+
+.vnjson__tree-header{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: #445;
+  color: wheat;
+  font-family: Arial;
+  font-size: 16px;
+  user-select: none;
+
+}
+.vnjson__tree-header--tab{
+  padding: 0 15px;
+  transition: 0.3s;
+  font-weight: 600;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+.vnjson__tree-header--tab:hover{
+  background: #223;
+  cursor: pointer;
+}
+.debug-active{
+  background: #223;
+}
+
+input[type="color"]{
+  background-color: #445;
+  border-style: unset;
+  cursor: pointer;
+}
+/*
+.vnjson__tree-coords{
+  display: flex;
+  flex-direction: column;
+
+}
+*/
+.vnjson__tree-header span{
+  font-size: 12px;
+  font-family: Arial;
+  color: wheat;
+}
+
+.vnjson__cursor-left,
+.vnjson__cursor-top{
+  display: inline-block;
+  width: 25px;
+  text-align: end;
+}
+
+#root{
+  cursor: pointer;
+}
+#root:hover{
+  color: skyblue;
+}
+
+.jstree-ocl, .jstree-anchor{
+  pointer-events: none;
+}
+
+
+/*score*/
+.stream__score{
+
+  background: wheat;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 10px;
+  border-top: 1px solid 778;
+}
+.stream__score--item{
+  border: 1px dashed rgba(0,0,0,0.5);
+  padding: 5px;
+  white-space: nowrap;
+  margin-bottom: 5px;
+}
+
+
+.stream__score--param {
+  display: flex;
+  justify-content: space-between;
+  padding: 3px 0;
+  font-size: 15px;
+}
+.stream__score--param span:first-child{
+  padding-left: 10px;
+
+}
+.stream__score--param span:last-child{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+  color: darkcyan;
+}
+.stream__score--param:nth-child(2n){
+  background: rgba(200,200,200,0.5);
+}
+/*reload*/
+.browser-reload{
+  width: 301px;
+  height: 312px;
+  position: absolute;
+  top: 768px;
+  right: 0px;
+  background: wheat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  color: gray;
+  cursor: pointer;
+  user-select: none;
+  border: 1px dashed gray;
+}
+
+
+/*logger*/
+#debug-logger{
+  background: wheat;
+  width: 100%;
+  height: 312px;
+  overflow: auto;
+  padding: 0;
+  padding-bottom: 30px;
+  position: absolute;
+  top: 768px;
+  margin: 0;
+}
+
+.log-boolean,
+.log-undefined {
+  color: magenta;
+}
+.log-object,
+.log-string {
+  color: #778;
+}
+.log-number {
+  color: cyan;
+}
+
+.error-boolean,
+.error-undefined {
+  color: magenta;
+}
+.error-object,
+.error-string {
+  color: red;
+}
+.error-number {
+  color: cyan;
+}
+.warn-boolean,
+.warn-undefined {
+  color: magenta;
+}
+.warn-object,
+.warn-string {
+  color: #e58a00;
+}
+.warn-number {
+  color: cyan;
+}
+#debug-logger{
+  display: flex;
+  flex-direction: column;
+}
+#debug-logger span {
+
+
+  width: 100%;
+  display: block;
+  padding: 10px 15px;
+}
+#debug-logger span:nth-child(2n){
+  background: rgba(0,0,0,0.03);
+}
+/**/
+
+#debug__vnjson--show{
+  height: 718px;
+  font-family: Consolas, Arial;
+  overflow: auto;
+  font-size: 16px;
+  position: relative;
+}
+#vnjson__tree-root{
+  position: absolute;
+  top: 0;
+  width: 100%;
+
+}
+#vnjson__tree-vnjson{
+  position: absolute;
+  top: 0;
+  display: none;
+  width: 100%;
+}
+
+#vnjson__tree-score{
+  position: absolute;
+  top: 0;
+  display: none;
+  width: 100%;
+}
+
+.json-document{
+  padding-top: 0;
+}
+

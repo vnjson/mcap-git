@@ -1,0 +1,14 @@
+
+- a: Давайте ознакомимся с базовой файловой структурой визуальной новеллы
+  dialog-box: true
+
+
+- a: В конрне проекта находится папка <i class="cyan">[ src ]</i>
+  scene: lake
+  term: Screenshot_35
+  right: Alice
+
+- term: Screenshot_36
+  a: Screenshot_36
+
+- jump: label_1_tree__fs2

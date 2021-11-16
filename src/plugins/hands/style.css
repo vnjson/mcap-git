@@ -1,0 +1,38 @@
+.stream__hands {
+    position: absolute;
+    z-index: 9999;
+    opacity: 0.8;
+    top: unset;
+    right: 0;
+    bottom: 10px;
+    display: none; 
+    height: 185px;
+
+  }
+.stream__hands .stream__hand {
+    width: 95px;
+    height: 95px;
+    background-image: url(./assets/slot.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.stream__hands .stream__hand-left {
+    width: 60px;
+    height: 60px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+.stream__hands .stream__hand-right {
+    width: 60px;
+    height: 60px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; 
+}

@@ -1,0 +1,21 @@
+---
+- id: $
+  name: ". . . ."
+  nameColor: '#49de58'
+  replyColor: '#a4deaa'
+
+- id: c
+  name: Капитан
+  nameColor: '#e0b33f'
+  replyColor: '#f2cd11'
+  logo: capitan
+
+- id: a
+  name: Алиса
+  nameColor: '#bb38c7'
+  replyColor: '#cb86d1'
+
+- id: n
+  name: Нора
+  nameColor: '#10a7e8'
+  replyColor: '#8acfed'

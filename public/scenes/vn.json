@@ -1,0 +1,1142 @@
+{
+  "$items": {
+    "assets": [
+      {
+        "name": "book",
+        "url": "./scenes/assets/book.png"
+      },
+      {
+        "name": "cuirass",
+        "url": "./scenes/assets/cuirass.png"
+      },
+      {
+        "name": "egg",
+        "url": "./scenes/assets/egg.png"
+      },
+      {
+        "name": "emerald",
+        "url": "./scenes/assets/emerald.png"
+      },
+      {
+        "name": "fist",
+        "url": "./scenes/assets/fist.png"
+      },
+      {
+        "name": "gear",
+        "url": "./scenes/assets/gear.png"
+      },
+      {
+        "name": "hat",
+        "url": "./scenes/assets/hat.png"
+      },
+      {
+        "name": "pokeball",
+        "url": "./scenes/assets/pokeball.png"
+      },
+      {
+        "name": "potion",
+        "url": "./scenes/assets/potion.png"
+      },
+      {
+        "name": "row-1-column-1",
+        "url": "./scenes/assets/row-1-column-1.png"
+      },
+      {
+        "name": "row-1-column-2",
+        "url": "./scenes/assets/row-1-column-2.png"
+      },
+      {
+        "name": "row-2-column-1",
+        "url": "./scenes/assets/row-2-column-1.png"
+      },
+      {
+        "name": "row-2-column-2",
+        "url": "./scenes/assets/row-2-column-2.png"
+      },
+      {
+        "name": "sword",
+        "url": "./scenes/assets/sword.png"
+      },
+      {
+        "name": "vnjson",
+        "url": "./scenes/assets/vnjson.png"
+      }
+    ],
+    "store": [
+      {
+        "id": "book",
+        "name": "Книга",
+        "type": "equip"
+      },
+      {
+        "id": "sword",
+        "name": "Меч",
+        "type": "equip"
+      },
+      {
+        "id": "fist",
+        "name": "Боксёрская перчатка",
+        "type": "equip"
+      },
+      {
+        "id": "emerald",
+        "name": "Изумруд",
+        "type": "accessor"
+      },
+      {
+        "id": "potion",
+        "name": "Элексир",
+        "type": "accessor"
+      },
+      {
+        "id": "cuirass",
+        "name": "Доспехи",
+        "type": "equip"
+      },
+      {
+        "id": "hat",
+        "name": "Шляпа",
+        "type": "cloth"
+      },
+      {
+        "id": "egg",
+        "name": "Яйцо",
+        "type": "craft"
+      },
+      {
+        "id": "vnjson",
+        "name": "Лого",
+        "type": "build",
+        "disabled": true
+      },
+      {
+        "id": "row-1-column-2",
+        "name": "top right",
+        "type": "craft",
+        "target": [
+          "vnjson"
+        ]
+      },
+      {
+        "id": "gear",
+        "name": "Шестеренка",
+        "type": "accessor",
+        "disabled": true
+      },
+      {
+        "id": "row-2-column-2",
+        "name": "right bottom",
+        "type": "craft",
+        "target": [
+          "vnjson"
+        ]
+      },
+      {
+        "id": "row-1-column-1",
+        "name": "top left",
+        "type": "craft",
+        "target": [
+          "vnjson"
+        ]
+      },
+      {
+        "id": "row-2-column-1",
+        "name": "left bottom",
+        "type": "craft",
+        "target": [
+          "vnjson"
+        ]
+      }
+    ]
+  },
+  "$root": {
+    "assets": [
+      {
+        "name": "6m",
+        "url": "./scenes/assets/6m.mp3"
+      },
+      {
+        "name": "Alice",
+        "url": "./scenes/assets/Alice.png"
+      },
+      {
+        "name": "class-room",
+        "url": "./scenes/assets/class-room.webp"
+      },
+      {
+        "name": "components",
+        "url": "./scenes/assets/components.webp"
+      },
+      {
+        "name": "dir_screens",
+        "url": "./scenes/assets/dir_screens.png"
+      },
+      {
+        "name": "kkkk",
+        "url": "./scenes/assets/kkkk.mp3"
+      },
+      {
+        "name": "lab",
+        "url": "./scenes/assets/lab.webp"
+      },
+      {
+        "name": "lake",
+        "url": "./scenes/assets/lake.webp"
+      },
+      {
+        "name": "library",
+        "url": "./scenes/assets/library.webp"
+      },
+      {
+        "name": "main-theme",
+        "url": "./scenes/assets/main-theme.mp3"
+      },
+      {
+        "name": "Nora",
+        "url": "./scenes/assets/Nora.png"
+      },
+      {
+        "name": "pianino",
+        "url": "./scenes/assets/pianino.mp3"
+      },
+      {
+        "name": "rozario_agro",
+        "url": "./scenes/assets/rozario_agro.mp3"
+      },
+      {
+        "name": "screens",
+        "url": "./scenes/assets/screens.webp"
+      },
+      {
+        "name": "Screenshot_35",
+        "url": "./scenes/assets/Screenshot_35.png"
+      },
+      {
+        "name": "Screenshot_36",
+        "url": "./scenes/assets/Screenshot_36.png"
+      },
+      {
+        "name": "Screenshot_42",
+        "url": "./scenes/assets/Screenshot_42.png"
+      },
+      {
+        "name": "Screenshot_43",
+        "url": "./scenes/assets/Screenshot_43.png"
+      },
+      {
+        "name": "Screenshot_44",
+        "url": "./scenes/assets/Screenshot_44.png"
+      },
+      {
+        "name": "Screenshot_45",
+        "url": "./scenes/assets/Screenshot_45.png"
+      },
+      {
+        "name": "skk",
+        "url": "./scenes/assets/skk.mp3"
+      },
+      {
+        "name": "yaml2",
+        "url": "./scenes/assets/yaml2.png"
+      },
+      {
+        "name": "yaml3",
+        "url": "./scenes/assets/yaml3.png"
+      }
+    ],
+    "$init": [
+      {
+        "main-menu": {
+          "beginning.$init": "Начинающий",
+          "experienced.$init": "Опытный",
+          "disabled_item": "Продвинутый"
+        },
+        "audio": false
+      }
+    ],
+    "content": [
+      {
+        "content": [
+          {
+            "$root.$init": "Том 1",
+            "disabled": "Глава 1",
+            "beginning.plug": "Глава 2",
+            "beginning.zim-label": "Глава 3"
+          },
+          {
+            "experienced.$init": "Том 2",
+            "disabled": "Глава 1",
+            "experienced.how-write-plugin": "Глава 2"
+          },
+          {
+            "disabled": "Том 3",
+            "experienced.test": "Глава 1",
+            "experienced.$init": "Глава 2"
+          },
+          {
+            "disabled": "Том 4",
+            "experienced.test": "Глава 1",
+            "experienced.$init": "Глава 2"
+          }
+        ]
+      }
+    ],
+    "data": {
+      "api.js": "\"  plugins = {}\\n\\n  current = {\\n    index: 0,\\n    labelName: '$init',\\n    sceneName: '$root',\\n    character: {id: '$', name: 'Norrator'},\\n    data: { \\n      points: 0\\n    },\\n    allAssets: []\\n  }\\n\\n  $store = {}\\n\\n  getAssetByName (name){}\\n\\n  getDataByName (id){}\\n\\n  getCurrentLabelBody (){}\\n\\n  getCurrentCharacter (){}\\n\\n  getCharacterById (id){}\\n\\n  getCtx (){}\\n\\n  setTree (tree){}\\n\\n  on (event, handler){}\\n\\n  emit (event, ...args){}\\n\\n  off (event){}\\n\\n  exec (ctx){}\\n\\n  next (){}\\n\\n  use (plugin){}\\n\"",
+      "fs_1.txt": "\"/src/\\n├───volume_1\\n│   ├───assets\\n│   │   ├───background.png\\n│   │   └───audio1.mp3\\n│   ├───chapter_2.yaml\\n│   └───$init.yaml\\n├───volume_2\\n│   ├───assets\\n│   │   └───char1.png\\n│   ├───data\\n│   │   ├───somescritp.py //plane_text to json\\n│   │   └───somefile.txt\\n│   ├───label_prefix\\n│   │   ├───label_1.yaml\\n│   │   └───label_2.yaml\\n│   │\\n│   └───$init.yaml\"",
+      "lesson_1.lua": "\"-- defines a factorial function\\nfunction fact (n)\\n  if n == 0 then\\n    return 1\\n  else\\n    return n * fact(n-1)\\n  end\\nend\\n    \\nprint(\\\"enter a number:\\\")\\na = io.read(\\\"*number\\\")        -- read a number\\nprint(fact(a))\"",
+      "lesson_1.py": "\"def count_by(arr, fn=lambda x: x):\\n    key = {}\\n    for el in map(fn, arr):\\n        key[el] = 0 if el not in key else key[el]\\n        key[el] += 1\\n    return key\""
+    },
+    "embed": {
+      "yt-salut": "<iframe width=\"100%\" height=\"570px\" src=\"https://www.youtube.com/embed/a_o-P-lIDEA?start=50\"></iframe>",
+      "3d-conni": "<iframe width=\"100%\" height=\"100%\" src=\"https://sketchfab.com/models/d0c68158e3f5482f87a9d89ada23c0bc/embed\"> </iframe>",
+      "cp-nexus": "<iframe width=\"100%\" height=\"100%\" src=\"https://codepen.io/bakakasin/embed/xxLaQZr?default-tab=html%2Cresult&editable=true\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\"></iframe>",
+      "yt-muk": "<iframe width=\"800\" height=\"450\" src=\"https://www.youtube.com/embed/7E_yOnAWdUk?start=62\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+      "yt-delp": "<iframe style=\"margin-left: 200px; margin-top: 100px\" width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/pBkESpKeP2U?start=23\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+      "cp-ttt": "<iframe height=\"570px\" width=\"100%\" scrolling=\"no\" title=\"Tic Tac Toe\" src=\"https://codepen.io/Androplis/embed/ebmMYP?default-tab=html%2Cresult&editable=true\" frameborder=\"no\" loading=\"lazy\" allowtransparency=\"true\" allowfullscreen=\"true\"></iframe>"
+    },
+    "package": {
+      "name": "Название 2",
+      "version": "0.2.2",
+      "debug": true
+    },
+    "_characters": [
+      {
+        "id": "$",
+        "name": ". . . .",
+        "nameColor": "#49de58",
+        "replyColor": "#a4deaa"
+      },
+      {
+        "id": "c",
+        "name": "Капитан",
+        "nameColor": "#e0b33f",
+        "replyColor": "#f2cd11",
+        "logo": "capitan"
+      },
+      {
+        "id": "a",
+        "name": "Алиса",
+        "nameColor": "#bb38c7",
+        "replyColor": "#cb86d1"
+      },
+      {
+        "id": "n",
+        "name": "Нора",
+        "nameColor": "#10a7e8",
+        "replyColor": "#8acfed"
+      }
+    ]
+  },
+  "beginning": {
+    "assets": [],
+    "$init": [
+      {
+        "clear": "all",
+        "next": true
+      },
+      {
+        "dialog-box": true,
+        "next": true
+      },
+      {
+        "screen": "stream",
+        "scene": "class-room",
+        "audio": {
+          "name": "main-theme",
+          "action": "play",
+          "speed": 0.3,
+          "volume": 0.01,
+          "loop": true
+        },
+        "hands": true,
+        "$": "test"
+      },
+      {
+        "dialog-box": false,
+        "hands": false,
+        "next": true
+      },
+      {
+        "menu": {
+          "zim-label": "Как подключить zim",
+          "label_1_tree__fs": "Файловая структура",
+          "yaml-scripts": "YAML скрипты",
+          "plug": "Список плагинов",
+          "disabled": "---",
+          "$root.$init": "Вернуться в начало"
+        }
+      }
+    ],
+    "label_1_tree__fs": [
+      {
+        "a": "Давайте ознакомимся с базовой файловой структурой визуальной новеллы",
+        "dialog-box": true
+      },
+      {
+        "a": "В конрне проекта находится папка <i class=\"cyan\">[ src ]</i>",
+        "scene": "lake",
+        "term": "Screenshot_35",
+        "right": "Alice"
+      },
+      {
+        "term": "Screenshot_36",
+        "a": "Screenshot_36"
+      },
+      {
+        "jump": "label_1_tree__fs2"
+      }
+    ],
+    "label_1_tree__fs2": [
+      "test 00",
+      "test 22",
+      {
+        "jump": "$init"
+      }
+    ],
+    "label_2_evt__animate": [
+      {
+        "c": "Информация о плагине [ animate ]",
+        "cloud": null,
+        "dialog-box": "clear"
+      },
+      {
+        "a": "Это снова я",
+        "center": "Alice"
+      },
+      {
+        "a": "Давайте посмотрим как работает плагин [ animate ]"
+      },
+      {
+        "animate": {
+          "selector": ".stream__show-center",
+          "duration": 300,
+          "css": {
+            "left": "+=300"
+          }
+        }
+      },
+      {
+        "a": "...",
+        "animate": {
+          "selector": ".stream__show-center",
+          "duration": 600,
+          "css": {
+            "left": "-=600",
+            "opacity": 0.5
+          }
+        }
+      },
+      {
+        "a": "...",
+        "animate": {
+          "selector": ".stream__show-center",
+          "duration": 600,
+          "css": {
+            "opacity": 1,
+            "left": "50%"
+          }
+        }
+      },
+      {
+        "jump": "$init"
+      }
+    ],
+    "label_2_evt__audio": [
+      {
+        "c": "Информация о плагине [ audio ]",
+        "cloud": false
+      },
+      {
+        "n": "Пример короткого звука. Плагин <i class=\"red\">sound</i>",
+        "sound": "pianino"
+      },
+      {
+        "a": "Это нужно для того, что бы не перекрывать канал с основной аудио дорожкой"
+      },
+      {
+        "n": "Потому что повторный вызов плагина <i class=\"cyan\">audio</i> прерывает воспроизведение предыдущей композиции",
+        "audio": false
+      },
+      {
+        "a": "Так же передаца отрицательного булевого значения flase / null прервет проигрывание музыки"
+      },
+      {
+        "jump": "$init"
+      }
+    ],
+    "label_2_evt__cloud": [
+      {
+        "c": "Информация о плагине [ cloud ]",
+        "cloud": {
+          "tags": {
+            "label_2_evt__audio": "audio",
+            "label_2_evt__jump": "jump",
+            "label_2_evt__cloud": "cloud",
+            "label_2_evt__scene": "scene",
+            "label_2_evt__show": "show"
+          }
+        }
+      },
+      "Плагин cloud используется",
+      {
+        "jump": "$init"
+      }
+    ],
+    "label_2_evt__dialog-box": [
+      {
+        "c": "Информация о плагине [ dialog-box ]",
+        "cloud": null
+      },
+      {
+        "c": "dialog-box null | true | clear"
+      },
+      {
+        "dialog-box": "clear"
+      },
+      {
+        "c": "Скрыть",
+        "dialog-box": null,
+        "timeout": {
+          "exec": {
+            "jump": "$init"
+          },
+          "timer": 1000
+        }
+      }
+    ],
+    "label_2_evt__embed": [
+      {
+        "yt-salut": true,
+        "slide": false,
+        "cloud": false,
+        "audio": false,
+        "$": "youtube"
+      },
+      {
+        "yt-salut": false,
+        "next": true
+      },
+      {
+        "$": "code pend",
+        "cp-nexus": true
+      },
+      {
+        "$": "sketchfab",
+        "cp-nexus": false,
+        "3d-conni": true
+      },
+      {
+        "3d-conni": false,
+        "yt-muk": true
+      },
+      {
+        "yt-muk": false,
+        "cp-ttt": true
+      },
+      {
+        "cp-ttt": false,
+        "yt-delp": true
+      },
+      {
+        "yt-delp": false,
+        "jump": "$init"
+      }
+    ],
+    "label_2_evt__hand": [
+      {
+        "c": "Здесь идет обучение использование левой руки",
+        "cloud": null
+      },
+      {
+        "c": "Затем необходимо изучить материалы по использованию правой руки",
+        "hand-left": "pokeball"
+      },
+      {
+        "a": "А вот так предмет берется правой рукой",
+        "hand-right": "book"
+      },
+      {
+        "jump": "$init"
+      }
+    ],
+    "label_2_evt__inv": [
+      {
+        "$": "Информация о плагине [ inv ]",
+        "cloud": false,
+        "inv": true
+      },
+      "Создаем сцену [ $items ], а внутри неё папку [ assets ] и ложим в неё файлы с предметами",
+      "Далее внутри этой сцены создаем файл в котором будет описываться",
+      {
+        "n": "Название ему необходимо задать store.yaml",
+        "inv-set": "gear"
+      },
+      "Внутри него описываем структуру предметов",
+      {
+        "a": "В оный день, когда над миром новым"
+      },
+      {
+        "a": "Бог склонял лицо свое, тогда",
+        "inv-get": "emerald"
+      },
+      {
+        "a": "Солнце останавливали словом,"
+      },
+      {
+        "a": "Словом разрушали города."
+      },
+      {
+        "jump": "$init"
+      }
+    ],
+    "label_2_evt__jump": [
+      {
+        "c": "Информация о плагине [ jump ]",
+        "cloud": null
+      },
+      {
+        "c": "Плагин [ jump ] включён в стандарную библиотеку, библиотеки vnjson"
+      },
+      {
+        "c": "scene.label | label | i"
+      },
+      {
+        "jump": "$init"
+      }
+    ],
+    "label_2_evt__load-scene": [
+      {
+        "$": "Сейчас будет подгужена сцена по запросу из вне",
+        "cloud": false,
+        "dialog-box": true
+      },
+      {
+        "load-scene": "./_data/data-scene.json"
+      }
+    ],
+    "label_2_evt__next": [
+      {
+        "c": "Первая строка"
+      },
+      {
+        "next": true
+      },
+      {
+        "a": "Вторая строка"
+      },
+      {
+        "jump": "$init"
+      }
+    ],
+    "label_2_evt__scene": [
+      {
+        "c": "Сцена это изображение на фоне [scene class-room]"
+      },
+      {
+        "jump": "$init"
+      }
+    ],
+    "label_2_evt__screen": [
+      {
+        "c": "Информация о плагине [ screen ]",
+        "cloud": null,
+        "termImg": "screens"
+      },
+      {
+        "jump": "$init"
+      }
+    ],
+    "label_2_evt__show": [
+      {
+        "a": "Привет я Алиса",
+        "center": "Alice",
+        "cloud": false
+      },
+      {
+        "a": "А это моя подруга Нора",
+        "right": "Nora"
+      },
+      {
+        "n": "Привет Алиса"
+      },
+      {
+        "left": "Alice",
+        "dialog-box": "clear"
+      },
+      {
+        "right": "Nora"
+      },
+      {
+        "left": "Nora"
+      },
+      {
+        "left": false
+      },
+      {
+        "right": false
+      },
+      {
+        "center": false,
+        "jump": "$init"
+      }
+    ],
+    "label_2_evt__slide": [
+      {
+        "dialog-box": true,
+        "hands": true,
+        "slide": "yaml2",
+        "$voice": "6m"
+      },
+      {
+        "slide": "Screenshot_36",
+        "$voice": "kkkk",
+        "set-data": {
+          "age": "меньше 12"
+        }
+      },
+      {
+        "slide": "components",
+        "$voice": "skk"
+      },
+      {
+        "slide": false,
+        "jump": "$root.$init"
+      }
+    ],
+    "label_2_evt__target": [
+      {
+        "$": "Там на неведомых дорожках",
+        "target": "_mark1"
+      },
+      {
+        "$": "Следы невиданных зверей;",
+        "_mark2": true
+      },
+      "Избушка там на курьих ножках",
+      "Стоит без окон, без дверей;",
+      {
+        "$": "Там лес и дол видений полны;",
+        "jump": "$init"
+      },
+      {
+        "$": "Там о заре прихлынут волны",
+        "_mark1": true
+      },
+      "На брег песчаный и пустой,",
+      "И тридцать витязей прекрасных",
+      {
+        "target": "_mark2"
+      },
+      {
+        "menu": {
+          "_test111+-": "Test Больше 12",
+          "_возврастМеньше12": "До 12",
+          "_начало": "В начало"
+        }
+      }
+    ],
+    "label_2_evt__term": [
+      {
+        "c": "Информация о плагине [ term ]",
+        "cloud": null,
+        "term": {
+          "lang": "text",
+          "data": "fs_1.txt",
+          "css": {
+            "color": "gray"
+          }
+        }
+      },
+      {
+        "c": "Кусок кода на python",
+        "term": {
+          "lang": "python",
+          "data": "lesson_1.py"
+        }
+      },
+      {
+        "a": "Немного кода на Lua",
+        "term": {
+          "lang": "lua",
+          "data": "lesson_1.lua"
+        }
+      },
+      {
+        "n": "Можно так же вывести изображение",
+        "term": "lab"
+      },
+      {
+        "jump": "$init"
+      }
+    ],
+    "label_2_evt__timeout": [
+      {
+        "a": "На следующем объекте диалоговое окно, на секунду скроется"
+      },
+      {
+        "dialog-box": false,
+        "hands": false,
+        "timeout": {
+          "exec": {
+            "dialog-box": true,
+            "hands": true
+          },
+          "timer": 1000
+        }
+      },
+      {
+        "a": "Как то так"
+      },
+      {
+        "jump": "$init"
+      }
+    ],
+    "label_2_evt__оценка_qa": [
+      {
+        "cloud": false,
+        "qa": "reset",
+        "next": true
+      },
+      {
+        "$": "Выставление оценок",
+        "оценка": {
+          "практика": {
+            "работа_в_команде": 7
+          }
+        }
+      },
+      "происходит таким образом",
+      {
+        "dialog-box": false,
+        "hands": false,
+        "next": true
+      },
+      {
+        "qa": {
+          "c": "Вопрос номер 1",
+          "Пункт меню 1": {
+            "общение": {
+              "лидерство": 77
+            }
+          }
+        }
+      },
+      {
+        "qa": {
+          "a": "К какой части речи не может относится слово \"Привет\"?",
+          "Междометие": {
+            "логика": {
+              "мозговой_штурм": -11
+            },
+            "творчество": {
+              "интуиция": 5
+            },
+            "теория": {
+              "умение_объяснить": 7
+            },
+            "общение": {
+              "кругозор": 99
+            }
+          },
+          "Существительное": {
+            "логика": {
+              "мозговой_штурм": -2
+            },
+            "творчество": {
+              "интуиция": 4
+            },
+            "теория": {
+              "умение_объяснить": 7
+            }
+          },
+          "Частица": {
+            "логика": {
+              "мозговой_штурм": -2
+            },
+            "творчество": {
+              "интуиция": 1
+            },
+            "прилежание": {
+              "самоорганизация": 1
+            },
+            "общение": {
+              "кругозор": 5
+            }
+          }
+        }
+      },
+      {
+        "qa": {
+          "n": "Какой норматив не сдается в школе?",
+          "Прыжки в длину": {
+            "логика": {
+              "мозговой_штурм": 100
+            },
+            "творчество": {
+              "интуиция": 5
+            },
+            "теория": {
+              "умение_объяснить": 7
+            }
+          },
+          "Отжимания": {
+            "логика": {
+              "мозговой_штурм": -2
+            },
+            "творчество": {
+              "интуиция": 4
+            },
+            "теория": {
+              "умение_объяснить": 7
+            }
+          },
+          "Бег с препятствиями": {
+            "логика": {
+              "мозговой_штурм": -2
+            },
+            "творчество": {
+              "интуиция": 1
+            },
+            "прилежание": {
+              "самоорганизация": 1
+            }
+          },
+          "Метание мяча": {
+            "логика": {
+              "мозговой_штурм": -2
+            },
+            "творчество": {
+              "интуиция": 10
+            },
+            "прилежание": {
+              "самоорганизация": 1
+            }
+          }
+        }
+      },
+      {
+        "qa": {
+          "$": "Что произойдет, если смешать сульфат меди и гидроксид натрия?",
+          "Жидкость приобретает зеленый цвет": {
+            "творчество": {
+              "интуиция": 4,
+              "оригинальность": 2
+            },
+            "эмоции": {
+              "понимание_эмоций": 1,
+              "управление_эмоциями": 2
+            },
+            "логика": {
+              "мозговой_штурм": 400
+            }
+          },
+          "Произойдет выделение газа": {
+            "общение": {
+              "кругозор": 3,
+              "лидерство": 1
+            }
+          },
+          "Выпадет осадок синего цвета": {
+            "теория": {
+              "понимание": 3
+            }
+          },
+          "Никакой реакции не произойдет": {
+            "теория": {
+              "понимание": -1
+            }
+          }
+        }
+      },
+      {
+        "jump": "$root.$init"
+      }
+    ],
+    "plug": [
+      {
+        "dialog-box": true,
+        "next": true
+      },
+      {
+        "c": "Каждое ключевое слово верхнего уровня является плагином",
+        "scene": "library",
+        "cloud": {
+          "tags": {
+            "label_2_evt__embed": "embed",
+            "label_2_evt__slide": "slide",
+            "label_2_evt__audio": "audio",
+            "label_2_evt__jump": "jump",
+            "label_2_evt__cloud": "cloud",
+            "label_2_evt__next": "next",
+            "label_2_evt__dialog-box": "dialog-box",
+            "label_2_evt__inv": "inv",
+            "label_2_evt__term": "term",
+            "label_2_evt__animate": "animate",
+            "label_2_evt__screen": "screen",
+            "label_2_evt__hand": "hands",
+            "label_2_evt__scene": "scene",
+            "label_2_evt__show": "show",
+            "label_2_evt__load-scene": "load-scene",
+            "label_2_evt__оценка_qa": "оценка / qa",
+            "label_2_evt__timeout": "timeout",
+            "label_2_evt__target": "target"
+          }
+        }
+      },
+      {
+        "dialog-box": "clear"
+      }
+    ],
+    "yaml-scripts": [
+      {
+        "term": "yaml2",
+        "dialog-box": true,
+        "a": "Обратите внимание на то, что бы имена asset'ов не повторялись"
+      },
+      {
+        "a": "Asset'ы можно ложить в любую сцену. Они будут доступны везде. Поэтому необходимо"
+      },
+      {
+        "a": "давать им уникальные имена"
+      },
+      {
+        "a": "Несмотря на то, что сборщик указывает на ошибки синтаксиса.",
+        "term": "yaml3"
+      },
+      {
+        "a": "Рекомендую установить плагин <i class=\"orange\">yaml lint</i> для своего редактора кода"
+      },
+      {
+        "a": "Он будет сразу подсвечивать ошибки синтаксиса"
+      },
+      {
+        "n": "Если таковые будут иметься"
+      },
+      {
+        "a": "Да. Именно так как говорит Нора"
+      },
+      "Так же подобные плагины обычно требуют настройки строгости проверки синтаксиса.",
+      {
+        "c": "Потому что они будут подсвечивать много лишних ошибок. Например длина есть ограничения по длине строки"
+      },
+      {
+        "a": "Или то, что кусок yaml кода должен начинаться с трех тире ---, а заканчиваться пустой строкой."
+      },
+      {
+        "n": "Или строгость написания комментариев."
+      },
+      "В любом случае, стандарный транслятор сцены в json не обращает внимание на такие мелочи",
+      {
+        "a": "Плагин yamllint будет полезен там, где это действительно нужно. Вроде где автор не поставил пробел в нужном месте или еще какой спец символ"
+      },
+      {
+        "jump": "$init"
+      }
+    ],
+    "zim-label": [
+      {
+        "zim-ui": true
+      },
+      {
+        "zim-intro": true
+      }
+    ]
+  },
+  "experienced": {
+    "assets": [],
+    "$init": [
+      {
+        "clear": "all",
+        "next": true
+      },
+      {
+        "screen": "stream",
+        "scene": "lab",
+        "audio": {
+          "name": "rozario_agro",
+          "action": "play",
+          "speed": 0.3,
+          "volume": 0.3,
+          "loop": true
+        },
+        "next": true
+      },
+      {
+        "dialog-box": false,
+        "menu": {
+          "how-write-plugin": "Как написать плагин",
+          "next": "API",
+          "disabled": "---",
+          "$root.$init": "Вернуться в начало"
+        }
+      },
+      {
+        "n": "vnjson.js",
+        "dialog-box": true,
+        "right": "Nora"
+      },
+      {
+        "n": "test 2",
+        "term": {
+          "lang": "js",
+          "data": "api.js",
+          "css": {
+            "color": "wheat"
+          }
+        }
+      },
+      {
+        "n": "test 33333",
+        "right": false
+      },
+      {
+        "jump": "$root.$init"
+      }
+    ],
+    "how-write-plugin": [
+      {
+        "a": "Внутри папки <i class=\"cyan\">[ plugins ]</i> находятся файлы плагинов.",
+        "right": "Alice",
+        "dialog-box": true,
+        "term": "Screenshot_42"
+      },
+      {
+        "a": "Точка входа в плагин регистрируется в файле <i class=\"red\">./src/plugins.js</i>",
+        "term": "Screenshot_43"
+      },
+      {
+        "switch": {
+          "name===Сергей": {
+            "jump": "$root.$init"
+          }
+        }
+      },
+      {
+        "a": "Таким вот образом",
+        "term": "Screenshot_44"
+      },
+      {
+        "a": "Внутри файла <i class=\"red\">./plugins/plugDir/index.js</i> подключаются файлы шаблона.",
+        "term": "Screenshot_45"
+      },
+      {
+        "a": "Експортируется функция. Внутри которой висит слушатель события. [ point ]"
+      },
+      {
+        "a": "Это событие будет вызываться из пользовательского скрипта. И называться как угодно, только не должно совподать с ранее зарегестрированными плагинами"
+      },
+      {
+        "right": false,
+        "left": "Nora",
+        "n": "Список пользовательских скриптов можно увидеть если в консоле браузера (F12) написать команду <i class=\"red\">vnjs.plugins</i>"
+      },
+      {
+        "n": "Так же потребуется базовые знания <i class=\"green\">javascript, jQuery, css, html</i>."
+      },
+      {
+        "jump": "$root.$init"
+      }
+    ]
+  }
+}

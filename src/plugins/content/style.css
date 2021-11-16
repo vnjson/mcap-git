@@ -1,0 +1,57 @@
+.stream__stage{
+  margin: 1% 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #333;
+  width: 70%;
+  padding: 5px;
+  height: 548px;
+  overflow: auto;
+}
+.stream__stage li{
+  list-style-type: none;
+  cursor: pointer;
+  font-size: 18px;
+  display: block;
+}
+.stream__stage li:last-child{
+  margin-bottom: 0px;
+}
+.stage-children li:not(.stage-child){
+  display: none;
+}
+.stage-parent{
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.1);
+  margin-bottom: 5px;
+}
+/*Том*/
+.stage-vol{
+  padding: 10px;
+  transition: 0.3s;
+  background: #000;
+  color: darkcyan;
+}
+.stage-vol:hover{
+  color: #34d1a2;
+  background: rgba(0, 0, 0, 0.7);
+}
+.stage-children{
+  padding-left: 20px;
+  display: block;
+  margin-top: 10px;
+}
+
+/*Глава*/
+.stage-child{
+  color: darkcyan;
+  padding: 10px;
+  transition: 0.3s;
+  background: #000;
+  margin-bottom: 10px;
+}
+
+.stage-child:hover{
+  color: #34d1a2;
+  background: rgba(0, 0, 0, 0.7);
+}

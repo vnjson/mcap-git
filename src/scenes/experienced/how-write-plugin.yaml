@@ -1,0 +1,25 @@
+- a: Внутри папки <i class="cyan">[ plugins ]</i> находятся файлы плагинов.
+  right: Alice
+  dialog-box: true
+  term: Screenshot_42
+
+- a: Точка входа в плагин регистрируется в файле <i class="red">./src/plugins.js</i>
+  term: Screenshot_43
+- switch:
+    name===Сергей: 
+      jump: $root.$init
+
+- a: Таким вот образом
+  term: Screenshot_44
+
+- a: Внутри файла <i class="red">./plugins/plugDir/index.js</i> подключаются файлы шаблона. 
+  term: Screenshot_45
+- a: Експортируется функция. Внутри которой висит слушатель события. [ point ] 
+- a: Это событие будет вызываться из пользовательского скрипта. И называться как угодно, только не должно совподать с ранее зарегестрированными плагинами
+- right: false
+  left: Nora
+  n: Список пользовательских скриптов можно увидеть если в консоле браузера (F12) написать команду <i class="red">vnjs.plugins</i>
+- n: Так же потребуется базовые знания <i class="green">javascript, jQuery, css, html</i>.
+
+
+- jump: $root.$init

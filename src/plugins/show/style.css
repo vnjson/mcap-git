@@ -1,0 +1,33 @@
+.stream__show-left {
+  position: absolute;
+  left: 50px;
+  top: 119px;
+  width: 260px;
+  height: 450px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  z-index: 9999; }
+
+.stream__show-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 119px;
+  width: 260px;
+  height: 450px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  z-index: 9999; }
+
+.stream__show-right {
+  position: absolute;
+  right: 50px;
+  top: 119px;
+  width: 260px;
+  height: 450px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  z-index: 9999; }

@@ -1,0 +1,12 @@
+
+
+- term: fs_1.txt
+- c: Кусок кода на python
+  term: lesson_1.py
+    
+- a: Немного кода на Lua
+  term: lesson_1.lua   
+- n: Можно так же вывести изображение
+  term: lab
+
+- jump: $init

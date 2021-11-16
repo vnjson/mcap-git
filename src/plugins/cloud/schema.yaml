@@ -1,0 +1,26 @@
+
+# tag cloud
+
+- cloud: 
+    tags:
+        beginning__plugins.audio: audio
+        beginning__plugins.jump: jump
+        beginning__plugins.cloud: cloud
+        beginning__plugins.next: next
+        beginning__plugins.dialog-box: dialog-box
+        beginning__plugins.inv: inv
+        beginning__plugins.term: term
+        beginning__plugins.animate: animate
+        beginning__plugins.item: item
+        beginning__plugins.screen: screen
+        beginning__plugins.hand: hands
+        scene.label: point
+        scene.label1: scene
+        scene.label2: show
+        scene.label3: filters
+        scene.label4: timeout
+        scene.label5: target
+    css: #wrapper for jQuery.css()
+      color: '#34d1a2' #цвета в ковычках
+      font-size: 18px
+

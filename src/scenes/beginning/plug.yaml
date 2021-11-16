@@ -1,0 +1,32 @@
+
+- dialog-box: true
+  next: true
+
+- c: Каждое ключевое слово верхнего уровня является плагином
+  scene: library
+  cloud:
+    tags:
+      label_2_evt__embed: embed
+      label_2_evt__slide: slide
+      label_2_evt__audio: audio
+      label_2_evt__jump: jump
+      label_2_evt__cloud: cloud
+      label_2_evt__next: next
+      label_2_evt__dialog-box: dialog-box
+      label_2_evt__inv: inv
+      label_2_evt__term: term
+      label_2_evt__animate: animate
+      label_2_evt__screen: screen
+      label_2_evt__hand: hands
+      label_2_evt__scene: scene
+      label_2_evt__show: show
+      label_2_evt__load-scene: load-scene
+      label_2_evt__оценка_qa: оценка / qa
+      label_2_evt__timeout: timeout
+      label_2_evt__target: target
+
+- dialog-box: clear
+
+# - screen: stream
+#   next: true
+# - inv: true

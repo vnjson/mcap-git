@@ -1,0 +1,75 @@
+
+- id: book 
+  name: Книга
+  type: equip #accessor #cloth #equip #craft #card
+
+- id: sword 
+  name: Меч
+  type: equip
+
+- id: fist
+  name: Боксёрская перчатка
+  type: equip 
+
+- id: emerald
+  name: Изумруд
+  type: accessor 
+
+- id: potion
+  name: Элексир
+  type: accessor
+
+- id: cuirass
+  name: Доспехи
+  type: equip
+
+- id: hat
+  name: Шляпа
+  type: cloth
+
+- id: egg
+  name: Яйцо
+  type: craft 
+
+- id: vnjson 
+  name: Лого
+  type: build 
+  disabled: true
+
+- id: row-1-column-2
+  name: top right
+  type: craft
+  target: 
+    - vnjson
+
+
+- id: gear
+  name: Шестеренка
+  type: accessor
+  disabled: true
+
+
+- id: row-2-column-2
+  name: right bottom
+  type: craft
+  target: 
+    - vnjson 
+
+- id: row-1-column-1
+  name: top left
+  type: craft
+  target: 
+    - vnjson 
+
+
+- id: row-2-column-1
+  name: left bottom
+  type: craft
+  target: 
+    - vnjson
+
+
+
+
+#- item:
+#  get: random

@@ -1,0 +1,7 @@
+- main-menu:
+    beginning.$init: Начинающий
+    experienced.$init: Опытный
+    disabled_item: Продвинутый 
+  audio: false
+  #scene: lab
+

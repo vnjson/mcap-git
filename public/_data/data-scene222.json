@@ -1,0 +1,27 @@
+{
+  "package": {
+    "sceneName": "test2222",
+    "labelName": "$init"
+  },
+  "sceneBody": {
+      "assets": [
+
+        {
+          "name": "ff8",
+          "url": "./_data/assets/final-fantasy-8.png"
+        }
+      ],
+      "$init": [
+        { 
+          "$": "Тест второй загруженной сцены", 
+          "scene": "ff8",
+          "dialog-box": true
+        },
+        "1111111111",
+        "222222222222",
+        { "jump": "$root.$init" }
+      ]
+  }
+
+
+}

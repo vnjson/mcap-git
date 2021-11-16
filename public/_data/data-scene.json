@@ -1,0 +1,42 @@
+{
+  "package": {
+    "sceneName": "test111",
+    "labelName": "$init"
+  },
+  "sceneBody": {
+      "assets": [
+
+        {
+          "name": "song1",
+          "url": "./_data/assets/1226808053.mp3"
+        },
+        {
+          "name": "bg_1",
+          "url": "./_data/assets/istockphoto-1226808053-170667a.webp"
+        },
+        {
+          "name": "character2",
+          "url": "./_data/assets/character2.png"
+        }
+      ],
+      "$init": [
+        { 
+          "dialog-box": true, 
+          "$": "Привет мир", 
+          "scene": "bg_1",
+          "center": "character2",
+          "audio": {
+            "name": "song1",
+            "action": "play",
+            "loop": true,
+            "volume": 0.5
+          }
+        },
+        "Это выполняется",
+        "Подгруженная из вне сцена",
+        { "jump": "$root.$init" }
+      ]
+  }
+
+
+}
