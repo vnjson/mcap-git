@@ -621,9 +621,3 @@ __`./scenes/$items/store.yaml`__ - описание предметов
 - a: Словом разрушали города.
 - jump: $init
 ```
-
-
-## Обратная связь
-[ 1 ] [vk.com/vnjson](https://vk.com/vnjson)
-
-[ 2 ] [t.me/mcvnjson](https://t.me/mcvnjson)
