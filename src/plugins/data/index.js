@@ -1,39 +1,30 @@
 
 
-function loadData (){
-  let data = localStorage.getItem('data')
-  if(data){
-    this.current.data = JSON.parse(data)
-  }
-  else{
-    this.current.data = {score: null}
-  }
 
-}
-
-function saveData(){
-  let data = JSON.stringify(this.current.data)
-  localStorage.setItem('data', data)
-  
-}
-function clearData(){
-  localStorage.removeItem('data')
-  this.current.data = {score: null}
-}
 export default function (){
 
-loadData.call(this)
-
-
-
+  this.on('player-load', name=>{
+    if( store.get(name) ){
+        this.current.data = store.get(name)
+    }
+  })
   this.on('set-data', data=>{
     for(let key in data){
       this.current.data[key] = data[key]
     }
-    saveData.call(this)
+    store.set(this.current.data.player.name, this.current.data)
+  })
+  this.on('clear-data-all', data=>{
+    localStorage.clear()
   })
   this.on('clear-data', data=>{
-    clearData.call(this)
+    store.remove(this.current.data.player.name)
+    
+    this.current.data = {
+      score: this.current.data.score,
+      player: this.current.data.player
+    }
+
   })
   this.on('switch', data=>{
     for(let equal in data){

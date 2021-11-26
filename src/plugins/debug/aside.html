@@ -3,7 +3,9 @@
     <div class="vnjson__tree-header--tab debug-active" data-id="vnjson__tree-root">labels</div>
     <div class="vnjson__tree-header--tab" data-id="vnjson__tree-vnjson">vn.json</div>
     <div class="vnjson__tree-header--tab" data-id="vnjson__tree-score">score</div>
-    <div class="vnjson__tree-color-picker"><input type="color" value="#f5deb3"></div>
+    <div class="vnjson__tree-header--tab" data-id="vnjson__tree-qr">qr</div>
+    <div class="vnjson__tree-color-picker"><input class="debug__color-input" value="#f5deb3"/></div>
+    
   <!--  
 
     <div class="vnjson__tree-coords">
@@ -19,8 +21,13 @@
       <pre id="json-renderer"></pre>
     </div>
     <div id="vnjson__tree-score"></div>
-
+    <div id="vnjson__tree-qr">
+      <input id="debug__qrcode--text" type="text" value="https://github.com/vnjson/mcap-man" spellcheck="false" placeholder="Введите ссылку"/>
+      <button id="debug__qrcode--generate">qr-code</button>
+      <div id="debug__qrcode"></div>
+      <div id="debug__clipboard-container"></div>
+    </div>
    
   </div>
-<div class="browser-reload">reload</div>
+<div class="browser-reload"></div>
 </div>

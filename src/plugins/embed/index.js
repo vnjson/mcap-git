@@ -19,7 +19,7 @@ this.on('postload', ()=>{
 function eventRegistration(event, tpl){
 
   var $tpl = $(tpl)
-  $tpl.hide().addClass("component")
+  $tpl.hide().addClass("component").css('background-color', 'white')
   this.$store.$stream.append($tpl)
 
   this.on(event, data=>{

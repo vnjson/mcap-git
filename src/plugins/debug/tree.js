@@ -1,4 +1,4 @@
-import aside from './aside.html'
+
 
 
 export default function (){
@@ -26,28 +26,12 @@ this.on('init', scene=>{
     //this.exec({clear: 'all'})
  })
 
-var $aside = $(aside)
-    $aside.find('#root').on('click', ()=>{
-      localStorage.clear();
-      location.reload()
-    })
 
-if(this.debug){
-  $($aside).insertAfter('.game')  
-}
-
-
-    $('#screen').mousemove(function(e) {
-        let top = e.pageY.toFixed();
-        let left = e.pageX.toFixed();
-        $('.vnjson__cursor-left').html(left)
-        $('.vnjson__cursor-top').html(top)
-    })
 
 var data = []
 for(let scene in this.TREE){
   let labels = Object.keys(this.TREE[scene]).filter(l=>{
-                let exclude =  l!=='embed'&&l!=='data'&&l!=='store'&&l!=='assets'&&l!=='package'&&l!=='characters'
+                let exclude =  l!=='html'&&l!=='embed'&&l!=='data'&&l!=='store'&&l!=='assets'&&l!=='package'&&l!=='characters'
                     return exclude
                })
 
@@ -90,13 +74,11 @@ for(let scene in this.TREE){
       }
     });
 
-/*
-
-    $("#screen").on('dblclick', '.component', function(e) {
-      $(this).hide()
-    });*/
-    $('.browser-reload').on('click', ()=>{
-      location.reload(true)
-    })
+/**
+ * reload
+ */
+$('.browser-reload').on('click', ()=>{
+   location.reload(true)
+ })
     
 }

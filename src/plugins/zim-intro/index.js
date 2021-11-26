@@ -9,11 +9,13 @@ export default function (){
       if(window.frame) frame.dispose()
       if(data){
 
-          init.call(this)
-          this.exec({screen: 'zim'})
+         setTimeout(()=>{
+            init.call(this)
+            this.exec({screen: 'zim'})
+         },0)
       }
       else{
-
+         window.frame = null
          this.exec({
           screen: 'stream'
         })

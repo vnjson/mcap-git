@@ -27,3 +27,30 @@
       font-family: Minecraft; }
       .stream__term-board pre code img {
         height: 100%; }
+
+
+
+/* term theme */
+.stream__term-board pre code{
+  font-family: Consolas;
+  font-size: 20px;
+  color: darkcyan;
+}
+.hljs-bullet{
+  color: darkcyan;
+}
+.hljs-attr{
+  color: brown;
+}
+.stream__term-board pre code .hljs-reply{
+  color: brown;
+}
+.hljs-string{
+  color: darkolivegreen;
+}
+.hljs-property{
+  color: goldenrod;
+}
+.hljs-comment{
+  color: gray;
+}

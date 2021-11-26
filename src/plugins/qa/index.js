@@ -2,16 +2,13 @@ import "./style.css";
 import tpl from "./tpl.html"
 import  { Score } from './default-score.js'
 
-function saveData(){
-  let data = JSON.stringify(this.current.data)
-  localStorage.setItem('data', data)
-  
-}
+
+
 function clearData(){
 
   if(this.current.data.score){
       this.current.data.score = new Score();
-      saveData.call(this)
+      store.set(this.current.data.player.name, this.current.data)
       this.emit('setScore')
   }
 
@@ -34,7 +31,8 @@ export default function (){
           this.current.data.score[key][param] += data[key][param]
         }
     }
-    saveData.call(this)
+     store.set(this.current.data.player.name, this.current.data)
+
 
     this.emit('setScore')
   }

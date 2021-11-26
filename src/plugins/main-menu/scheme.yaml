@@ -1,0 +1,20 @@
+---
+- menu:
+    _mark1: В начало
+    disabled: Общая концепция
+    $root.$init: Отправиться в начало
+    next: Список плагинов
+
+
+- menu:
+    zim-label: Как подключить zim
+    label_1_tree__fs: Файловая структура
+    yaml-scripts: YAML скрипты
+    plug: Список плагинов
+    disabled: ---
+    $root.$init: Вернуться в начало
+    onClick:
+      hands: true
+      dialog-box: true
+
+# onClick - execute the code after the jump

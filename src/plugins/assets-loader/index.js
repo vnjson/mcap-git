@@ -22,23 +22,37 @@ var load = _=>{
             this.emit('postload') 
           }             
         });
- 
   }
-  else if(/\.png|\.jpg|.webp/i.test(asset.url)){
+  else if(/\.png|\.jpg|\.jpeg|\.webp|\.gif/i.test(asset.url)){
     
-      let img = new Image();
-       img.src =  asset.url;
-       img.onload = ()=>{
-          this.$store[asset.name] = asset.url
-          if(this.current.assets.length-1>=++i){
-            this.emit('load', asset)
-            load();
+      if(this.TREE.$root.hasOwnProperty('package')){
+          if(this.TREE.$root.package.hasOwnProperty('preload') ){
+            if(this.current.assets.length-1>=++i){
+              if(this.TREE.$root.package.preload){
+                    let img = new Image();
+                    img.src =  asset.url;
+                    img.onload = ()=>{
+                      this.$store[asset.name] = img
+                      this.emit('load', asset)
+                      load()
+                      
+                    };
+              }
+              else{
+                this.$store[asset.name] = asset.url
+                 load()
+              }
 
-          }else{
-            this.emit('postload')
-            
-          };
-       };  
+            }else{
+                  this.emit('postload')
+            };
+
+          }
+      }
+ 
+
+  
+
   }
   else{
     ++i
@@ -60,6 +74,7 @@ var setAllAssets = ()=>{
     if(this.current.assets.length>0){
 
           getAssets();
+       
     }
     else{
  

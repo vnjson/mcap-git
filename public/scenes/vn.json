@@ -1,14 +1,8 @@
 {
   "$root": {
-    "assets": [
-      {
-        "name": "409d9bc5",
-        "url": "./scenes/assets/409d9bc5.jpg"
-      }
-    ],
+    "assets": [],
     "$init": [
       {
-        "screen": "stream",
         "dialog-box": true,
         "next": true
       },
@@ -21,8 +15,11 @@
       "Там чудеса там леший бродит,",
       "Русалка на ветвях сидит;",
       {
-        "jump": "$root.$init"
+        "jump": "$init"
       }
-    ]
+    ],
+    "package": {
+      "debug": true
+    }
   }
 }

@@ -9,19 +9,23 @@
   color: white;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+}
 
 .loader {
   color: wheat;
   font-family: Consolas, Menlo, Monaco, monospace;
   font-weight: bold;
   font-size: 100px;
-  opacity: 0.8; }
-  .loader span {
-    display: inline-block;
-    animation: pulse 0.4s alternate infinite ease-in-out; }
-    .loader span:nth-child(2) {
-      animation-delay: 0.4s; }
+  opacity: 0.8;
+}
+.loader span {
+  display: inline-block;
+  animation: pulse 0.4s alternate infinite ease-in-out;
+}
+.loader span:nth-child(2) {
+  animation-delay: 0.4s;
+}
 
 @keyframes pulse {
   to {

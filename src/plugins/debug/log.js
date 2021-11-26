@@ -3,7 +3,7 @@ export default function (){
 
   const $tpl = $(`<pre id="debug-logger"></pre>`)
 
-  $('body').append($tpl)
+  $('.game').append($tpl)
   var logger = document.getElementById("debug-logger")
 
   function outputHtml(output){
@@ -89,5 +89,71 @@ export default function (){
         return true;
     }, true);
       //logger.scrollTop = 99999999999; 
-     
+/**
+ * Terminal
+ */
+var $terminal = $(`
+    <div class="debug__terminal">
+        <span class="debug__terminal-tilda">~</span>
+        <input spellcheck="false" class="debug__terminal-input" placeholder="key: value"/>
+    </div>
+    `)
+$($terminal).insertAfter($tpl)
+
+function evaluate (){
+
+    let data = $('.debug__terminal-input').val().split(':')
+    if(data.length>1){
+            var param = data[1].trim()
+            if(param==='false') 
+                        param=false 
+            if(param==='true')
+                        param=true
+
+            $vnjs.emit( data[0], param )  
+    }
+    else{
+        $vnjs.emit( '$', data[0] )
+    }
+
+    $('.debug__terminal-input').val('')
 }
+
+
+$('.debug__terminal-tilda').on('mousedown', function (e){
+    e.preventDefault()
+
+    evaluate()
+})
+$(document).on('keypress', function (e){
+    //setCaretPosition($('.debug__terminal-input').val().length)
+    if(e.which == 13) { 
+        e.preventDefault()
+        evaluate()
+    }
+
+})
+/*
+function setCaretPosition(caretPos) {
+    var elem =  document.querySelector('.debug__terminal-input')
+
+    if(elem != null) {
+        if(elem.createTextRange) {
+            var range = elem.createTextRange();
+            range.move('character', caretPos);
+            range.select();
+        }
+        else {
+            if(elem.selectionStart) {
+                elem.focus();
+                elem.setSelectionRange(caretPos, caretPos);
+            }
+            else
+                elem.focus();
+        }
+    }
+}
+*/
+}
+
+

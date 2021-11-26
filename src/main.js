@@ -1,5 +1,5 @@
 import plugins from './plugins.js'
-
+import './theme.css'
 
 /**
  * Загрузка игры
@@ -27,13 +27,12 @@ function init (tree){
   $vnjs.setTree(tree)
 
   $vnjs.on('postload', ()=>{
-
-        $vnjs.exec({jump: '$root.$init', screen: 'stream'})
+      $vnjs.exec({screen: 'stream'})
+      $vnjs.exec({jump: '$root.$init'})
   })
 
   $vnjs.on('init', ()=>{
     $vnjs.exec()
   })
 }
-
 

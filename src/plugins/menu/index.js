@@ -11,9 +11,8 @@ export default function (){
   this.on('menu', menu);
 
   function menu (menuObj){
-
-    $tpl.empty() 
-    $tpl.css({display: 'flex'});
+    var onClickObj = null
+    $tpl.html('')
 
 
     for(var [label, menuItem ] of Object.entries(menuObj)){
@@ -35,18 +34,18 @@ export default function (){
                           <span style='color:${character.replyColor};'>${ menuItem }</span>
                     </div>`;
         }
-
         $('.stream__menu-menu').append(str)
-
       }
       else{
         let str = null
         if(/disabled/i.test(label) ){
             str = `<div data-label="${ label }" class="stream__menu-item disabled"><span class="sound-hover">${ menuItem }</span></div>`;
         }
-        else if(/^_/i.test(label)){
-
-          str = `<div data-label="${ label }" class="stream__menu-item"><span class="sound-hover">${ menuItem }</span></div>`;
+        else if(label==='onClick'){
+          onClickObj = menuItem
+        }
+        else if(label==='css'){
+          $tpl.css(menuItem)
         }
         else{
             str = `<div data-label="${ label }" class="stream__menu-item"><span class="sound-hover">${ menuItem }</span></div>`;
@@ -56,26 +55,34 @@ export default function (){
       }
     }
 
-let $vnjs = this
-
+var $vnjs = this
+function onClickMenuHandler(label){
+  if(menuObj.hasOwnProperty('onClick') ){
+      $vnjs.exec(onClickObj)
+  }
+}
 function clickHundler(){
 
     let label = $(this).data('label')
 
     if(label==='next'){
-      $vnjs.exec({ next: true })
+        onClickMenuHandler(label)
+        setTimeout(()=>{
+          $vnjs.exec({ next: true })
+        },0)
     }
-    else if(/^_/i.test(label)){
-      $vnjs.exec({ target: label })
-    }
+
     else{
-      $vnjs.exec({ jump: label }) 
+     onClickMenuHandler(label)
+     setTimeout(()=>{
+        $vnjs.exec({ jump: label })
+
+     },0)
     }
-    $tpl.hide();
+    $tpl.hide()
     $tpl.off( "click", clickHundler)
-
 }
-
+$tpl.css({display: 'flex'});
 $tpl.on("click", ".stream__menu-item", clickHundler);
 
 

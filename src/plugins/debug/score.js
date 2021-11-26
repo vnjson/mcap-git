@@ -9,7 +9,6 @@ export default function (){
   });  
 }
 
-
 function setScore (){
 
     if(this.debug&&this.current.data.score){

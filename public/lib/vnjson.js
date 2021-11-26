@@ -11,7 +11,7 @@
   'use strict';
 
 class Vnjson {
-  version = '1.7.4';
+  version = '1.7.5';
   //current object
   ctx = {};
   //loaded scenes
@@ -22,7 +22,6 @@ class Vnjson {
     this.debug = conf.debug
     this.on('jump', this.jumpHandler)
     this.on('next', this.next)
-    this.on('target', this.targetHandler)
     this.on('timeout', this.timeoutHandler)
   }
 
@@ -218,6 +217,18 @@ class Vnjson {
   }
   /*include plugins*/
   jumpHandler (pathname){
+    if(/^_/i.test(pathname) ){
+        var index = this.getCurrentLabelBody()
+                        .map( ctx=>{
+                          return ctx.hasOwnProperty(pathname)
+                        })
+                        .indexOf(true)
+                       
+        let label = [ this.current.sceneName, this.current.labelName, index ].join('.')
+
+        this.exec({jump: label})
+    }
+    else{
         let path = pathname.split('.');
         this.current.index = path[2]||0;
         //label
@@ -231,19 +242,10 @@ class Vnjson {
             this.current.sceneName = path[0];
             this.current.labelName = path[1];
             this.emit('init', true);
-        };
+        };      
+    }
   }
-  targetHandler (mark){
-        var index = this.getCurrentLabelBody()
-                        .map( ctx=>{
-                          return ctx.hasOwnProperty(mark)
-                        })
-                        .indexOf(true)
-                       
-        let label = [ this.current.sceneName, this.current.labelName, index ].join('.')
 
-        this.exec({jump: label})
-  }
   timeoutHandler (param){
     setTimeout(()=>{
       for(let event in param.exec)

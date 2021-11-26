@@ -13,8 +13,8 @@ import cloud              from './plugins/cloud/index.js'
 import audio              from './plugins/audio/index.js'
 import animate            from './plugins/animate/index.js'
 import menu               from './plugins/menu/index.js'
+import mainMenu           from './plugins/main-menu/index.js'
 import term               from './plugins/term/index.js'
-import inv                from './plugins/inv/index.js'
 import show               from './plugins/show/index.js'
 import scene              from './plugins/scene/index.js'
 import soundHover         from './plugins/sound-hover/index.js'
@@ -27,9 +27,13 @@ import slide              from './plugins/slide/index.js'
 import content            from './plugins/content/index.js'
 import voice              from './plugins/voice/index.js'
 import embed              from './plugins/embed/index.js'
+import html               from './plugins/html/index.js'
+import discordLog         from './plugins/discord-log/index.js'
+import statusBar          from './plugins/status-bar/index.js'
+import mcPlayer           from './plugins/mc-player/index.js'
 /*zim*/
 import zimIntro           from './plugins/zim-intro/index.js'
-import zimUI              from './plugins/zim-ui/index.js'
+
 /*embed*/
 
 
@@ -49,8 +53,8 @@ export default function(){
   this.use(audio)
   this.use(animate)
   this.use(menu)
+  this.use(mainMenu)
   this.use(term)
-  this.use(inv)
   this.use(cloud)
   this.use(soundHover)
   this.use(clear)
@@ -63,10 +67,12 @@ export default function(){
   this.use(content)
   this.use(voice)
   this.use(embed)
-
+  this.use(html)
+  this.use(discordLog)
+  this.use(statusBar)
+  this.use(mcPlayer)
   /*zim*/
   this.use(zimIntro)
-  this.use(zimUI)
 
 
 }
