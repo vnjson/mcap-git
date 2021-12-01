@@ -17,9 +17,6 @@
       {
         "jump": "$init"
       }
-    ],
-    "package": {
-      "debug": true
-    }
+    ]
   }
 }

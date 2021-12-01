@@ -9,9 +9,17 @@ import pug              from 'rollup-plugin-pug-html'
 import scenesToJson     from 'scenes-to-json'
 import chokidar         from 'chokidar'
 import html             from 'rollup-plugin-html'
+import fs               from 'fs'
 
 
 
+const PORT = fs.readdirSync(__dirname)
+               .filter(item=>/^9\d{3}/.test(item))[0]
+
+if(!PORT){
+    console.error('[!] Некорректный номер порта')
+    process.exit()
+}
 export default {
   input: './src/main.js',
   output: {
@@ -48,7 +56,7 @@ export default {
 
     serve({
       contentBase:[`./public/`],
-      port: 9000
+      port: PORT||9000
     }),
 
   ],
