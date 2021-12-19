@@ -1,18 +1,119 @@
 {
   "$root": {
-    "assets": [],
+    "assets": [
+      {
+        "name": "att",
+        "url": "./scenes/assets/att.mp3"
+      },
+      {
+        "name": "c10s",
+        "url": "./scenes/assets/c10s.mp3"
+      },
+      {
+        "name": "c30s",
+        "url": "./scenes/assets/c30s.mp3"
+      },
+      {
+        "name": "c4s",
+        "url": "./scenes/assets/c4s.mp3"
+      },
+      {
+        "name": "err1",
+        "url": "./scenes/assets/err1.mp3"
+      },
+      {
+        "name": "err2",
+        "url": "./scenes/assets/err2.mp3"
+      },
+      {
+        "name": "hr",
+        "url": "./scenes/assets/hr.mp3"
+      },
+      {
+        "name": "m10s",
+        "url": "./scenes/assets/m10s.mp3"
+      },
+      {
+        "name": "m30s",
+        "url": "./scenes/assets/m30s.mp3"
+      },
+      {
+        "name": "m4s",
+        "url": "./scenes/assets/m4s.mp3"
+      },
+      {
+        "name": "mtf",
+        "url": "./scenes/assets/mtf.mp3"
+      },
+      {
+        "name": "mts",
+        "url": "./scenes/assets/mts.mp3"
+      },
+      {
+        "name": "ok1",
+        "url": "./scenes/assets/ok1.mp3"
+      },
+      {
+        "name": "ok2",
+        "url": "./scenes/assets/ok2.mp3"
+      },
+      {
+        "name": "on",
+        "url": "./scenes/assets/on.mp3"
+      },
+      {
+        "name": "pg",
+        "url": "./scenes/assets/pg.mp3"
+      },
+      {
+        "name": "qu",
+        "url": "./scenes/assets/qu.mp3"
+      },
+      {
+        "name": "t10s",
+        "url": "./scenes/assets/t10s.mp3"
+      },
+      {
+        "name": "t30s",
+        "url": "./scenes/assets/t30s.mp3"
+      },
+      {
+        "name": "t4s",
+        "url": "./scenes/assets/t4s.mp3"
+      },
+      {
+        "name": "tg",
+        "url": "./scenes/assets/tg.mp3"
+      },
+      {
+        "name": "tpw",
+        "url": "./scenes/assets/tpw.mp3"
+      }
+    ],
     "$init": [
       {
         "dialog-box": true,
         "next": true
       },
       "У лукоморья дуб зелёный;",
-      "Златая цепь на дубе том",
+      {
+        "$": "Златая цепь на дубе том",
+        "sound": "att"
+      },
       "И днём и ночью кот учёный",
       "Всё ходит по цепи кругом;",
       "Идёт направо — песнь заводит,",
       "Налево — сказку говорит.",
-      "Там чудеса там леший бродит,",
+      {
+        "$": "Там чудеса там леший бродит",
+        "audio": {
+          "name": "qu",
+          "action": "play",
+          "speed": 10,
+          "volume": 0.5,
+          "loop": true
+        }
+      },
       "Русалка на ветвях сидит;",
       {
         "jump": "$init"
