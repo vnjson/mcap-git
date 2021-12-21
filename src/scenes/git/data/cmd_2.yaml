@@ -1,0 +1,4 @@
+# cd project111
+# npm install
+# mv 9000 9077
+# npm run dev

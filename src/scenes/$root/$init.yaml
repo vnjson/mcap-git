@@ -1,18 +1,11 @@
-- dialog-box: true
-  next: true  
-- У лукоморья дуб зелёный;
-- $: Златая цепь на дубе том
-  sound: att
-- И днём и ночью кот учёный
-- Всё ходит по цепи кругом;
-- Идёт направо — песнь заводит,
-- Налево — сказку говорит.
-- $: Там чудеса там леший бродит
-  audio: 
-    name: qu
-    action: play
-    speed: 10 # normal = 1
-    volume: 0.5
-    loop: true
-- Русалка на ветвях сидит;
-- jump: $init
+- clear: all
+  next: true
+- menu:
+    git.intro: Зачем это нужно
+    git.$init: Что такое git
+    git.web: Регистрация на github.com
+    git.project: Работа с проектом
+    git.ssh: Загрузить проект на сайт
+    onClick:
+      dialog-box: true
+  scene: background
