@@ -3,9 +3,10 @@
 - menu:
     git.intro: Зачем это нужно
     git.$init: Что такое git
-    git.web: Регистрация на github.com
+    git.web: Регистрация на github
     git.project: Работа с проектом
-    git.ssh: Загрузить проект на сайт
+    git.ssh: Генерация SSH ключей
+    git.push: Загрузить проект на github
     onClick:
       dialog-box: true
   scene: background

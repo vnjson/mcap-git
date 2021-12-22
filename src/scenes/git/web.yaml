@@ -27,12 +27,10 @@
 - $: Если вы ещё не создавали проект новеллы на локальном компе, тогда можно использовать шаблон для новеллы
   slide: reg_11
 - 'Перейдите по адресу указаному на слайде и нажмите большую зелёную кнопку <i style="color: darkcyan">Use this template</i>'
-- $: 'Придумате ему название и нажмите на кнопку <i style="color: darkcyan">Create repository from template</i>'
+- $: 'Придумате проекту название и нажмите на кнопку <i style="color: darkcyan">Create repository from template</i>'
   slide: reg_12
 - $: Теперь необходимо клонировать репозиторий на свой компьютер.
   slide: reg_13
-- $: Делается это при помощи команды git clone
-  slide: term_0
 - jump: $root.$init
 
 
