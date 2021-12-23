@@ -8,5 +8,5 @@
 - После того как у вас уже имеются копии проекта внутри майнкрафт и на локальном компьютере.
 - Вам уже не нужно клонировать проет из gihub.com. Теперь вы пожете написать команду pull и она загрузить последние изменения
 # git remote set-url origin git@github.com:vnjson/mcvnjson.git
-# GitHubPages
+# GitHubPages 
 - jump: $root.$init

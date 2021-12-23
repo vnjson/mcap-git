@@ -103,11 +103,11 @@
       },
       {
         "name": "serv_0",
-        "url": "./scenes/assets/serv_0.png"
+        "url": "./scenes/assets/serv_0.jpg"
       },
       {
         "name": "serv_1",
-        "url": "./scenes/assets/serv_1.png"
+        "url": "./scenes/assets/serv_1.jpg"
       },
       {
         "name": "ssh_0",
